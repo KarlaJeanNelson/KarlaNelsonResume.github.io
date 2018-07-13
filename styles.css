@@ -1,4 +1,7 @@
+body {
+    background-color: blue;
+}
+
 h1 {
     font-family: 'Fredericka the Great', cursive;
-    font-size: 8vw;
 }
