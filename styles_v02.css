@@ -26,11 +26,11 @@ br {
     font-size: 3vw;
   }
   
-  .topnav, .fakenav {
+  .topnav {
       padding: 20px;
   }
   
-  .topnav h2, .fakenav h2 {
+  .topnav h2 {
       font-size: 40%;
   }
   
@@ -77,7 +77,7 @@ body {
     z-index: 1;
 }
 
-.topnav h1, .fakenav h1 {
+.topnav h1 {
     font-family: 'Fredericka the Great', cursive;
 }
 
@@ -118,6 +118,7 @@ h4, h5 {
 /* Right column */
 .rightcolumn {
     float: left;
+    width: 75%;
 }
 
 /* Clear floats after the columns */
@@ -133,8 +134,8 @@ h4, h5 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
     padding: 0 1vw 0 1vw;
     position: relative;
-    bottom: 0px;
     left: 20px;
+    top: 8vw;
     height: 100%;
 }
 

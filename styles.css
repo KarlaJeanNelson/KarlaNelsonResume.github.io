@@ -8,6 +8,7 @@
     background-color: var(--blue);
     box-sizing: border-box;
     text-align: center;
+    z-index: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -70,9 +71,8 @@ header {
     background-color: var(--yellow);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
     color: black;
-    position: relative;
+    position: sticky;
     top: 0px;
-    left: 0px;
     width: 100%;
     z-index: 1;
 }
@@ -118,6 +118,11 @@ h4, h5 {
 /* Right column */
 .rightcolumn {
     float: left;
+    width: 75%;
+    border-color: red;
+    border-style: solid;
+    position: relative;
+    left: 20px;
 }
 
 /* Clear floats after the columns */
@@ -133,7 +138,7 @@ h4, h5 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.25);
     padding: 0 1vw 0 1vw;
     position: relative;
-    bottom: 0px;
+    top: 0px;
     left: 20px;
     height: 100%;
 }
