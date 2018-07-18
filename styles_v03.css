@@ -1,0 +1,11 @@
+:root {
+    --red: #c62828;
+    --orange: #ff9800;
+    --yellow: #ffeb3b;
+    --green: #cddc39;
+    --blue: #b0e0e6; /* powderblue */
+    --brown: #4e342e;
+    background-color: var(--blue);
+    box-sizing: border-box;
+    text-align: center;
+}
