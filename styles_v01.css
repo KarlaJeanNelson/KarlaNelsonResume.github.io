@@ -6,10 +6,9 @@
 	--blue: #D0ECE7;
 	--darkblue: #2980B9;
 	--brown: #795548;
-	--gray: #839192;
+	--mygray: #839192;
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
-	z-index: 0;
 }
 
 .myhero {
@@ -29,6 +28,7 @@
 }
 
 .banner {
+	grid-area: banner;
 	background-color: var(--yellow);
 	font-family: 'Fredericka the Great', 'cursive';
 	font-size: 2rem;
@@ -36,7 +36,7 @@
 	position: sticky;
 	text-align: center;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 }
 
 .slogan {
@@ -48,17 +48,37 @@
 .main-grid {
 	display: grid;
 	grid-template:
+		"banner banner banner banner"
 		"left-gutter contact cv right-gutter"
 		/10vw 1fr 3fr 10vw;
 	width: 100%;
 }
 
-.contact {
-	background-color: var(--darkblue);
+.main-grid > .contact {
 	grid-area: contact;
+	justify-content: center;
+	background-color: var(--darkblue);
+}
+
+.contact > .navbar {
+	display: inline-flex;
+	align-items: stretch;
+	flex-direction: column;
+	margin: 1rem;
+	position : fixed;
+}
+
+.navbar > .item {
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	padding: 1rem;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .info {
+	
 }
 
 .cv {
@@ -66,7 +86,7 @@
 }
 
 .cv-grid {
-	color: var(--gray);
+	color: var(--mygray);
 	display: grid;
 	grid-template-columns: 2fr 5fr;
 	background-color: white;
@@ -100,7 +120,7 @@
 }
 
 .job-desc {
-	color: var(--gray);
+	color: var(--mygray);
 	font-family: 'Karla', sans-serif;
 	font-weight: normal;	
 	text-align: justify;
@@ -145,6 +165,11 @@ html, body {
 	line-height: 1;
 	margin: 0;
 	padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
 }
 
 .shadow {

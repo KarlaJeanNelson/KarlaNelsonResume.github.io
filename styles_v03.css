@@ -1,11 +1,181 @@
 :root {
-    --red: #c62828;
-    --orange: #ff9800;
-    --yellow: #ffeb3b;
-    --green: #cddc39;
-    --blue: #b0e0e6; /* powderblue */
-    --brown: #4e342e;
-    background-color: var(--blue);
-    box-sizing: border-box;
-    text-align: center;
+	--red: #E74C3C;
+	--orange: #DC7633;
+	--yellow: #F9E79F;
+	--green: #82E0AA;
+	--blue: #D0ECE7;
+	--darkblue: #2980B9;
+	--brown: #795548;
+	--mygray: #839192;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+.myhero {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hero-left, .hero-right {
+	border: solid black 1px;
+}
+
+.hero-left {
+	font-size: 4rem;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.banner, .grid-banner {
+	grid-area: banner;
+	background-color: var(--yellow);
+	font-family: 'Fredericka the Great', 'cursive';
+	font-size: 2rem;
+	padding: 1rem;
+	text-align: center;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.slogan {
+	font-family: 'Comfortaa', cursive;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.main-grid {
+	display: grid;
+	grid-template:
+		"banner banner banner banner"
+		"left-gutter contact cv right-gutter"
+		/10vw 1fr 3fr 10vw;
+	width: 100%;
+}
+
+.contact {
+	grid-area: contact;
+	background-color: var(--darkblue);
+}
+
+.navbar {
+	margin: 1rem;
+	position : fixed;
+}
+
+.item {
+	color: white;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	padding: 1rem;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.cv {
+	grid-area: cv;
+}
+
+.cv-grid {
+	color: var(--mygray);
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	background-color: white;
+	border-radius: 2px;
+	margin: 1rem;
+	margin-bottom: 0;
+	padding: 1rem;
+	padding-right: 0;
+}
+
+.titletext {
+	grid-column: 1 / span 2;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0;
+}
+
+.company {
+	grid-column: 1 / 1;
+}
+
+.special {
+	color: var(--darkblue);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.job {
+	grid-column: 2 / 2;
+	border-bottom: solid var(--darkblue) 2px;
+	padding-bottom: 0.5rem;
+}
+
+.job-desc {
+	color: var(--mygray);
+	font-family: 'Karla', sans-serif;
+	font-weight: normal;	
+	text-align: justify;
+	padding-top: 0.5rem;
+}
+
+.company, .job {
+	color: black;
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+}
+
+/* Set root font size for mobile. */
+@media screen and (max-width: 599px) {
+	:root {
+		font-size: 12px;
+	}
+	
+	.main-grid {
+		display: grid;
+		grid-template:
+			"banner banner"
+			"left   cv"
+			"bottom bottom"
+			/0px 1fr;
+	}
+	
+	.not-mobile {
+		display: none;
+	}
+}
+
+/* Set root font size for desktop */
+@media screen and (min-width: 960px) {
+	:root {
+		font-size: 20px;
+	}
+}
+
+html, body {
+	background-color: var(--blue);
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	overflow: scroll;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.offset {
+	align-self: end;
+	height: 4.7rem;
+	visibility: hidden;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
