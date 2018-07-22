@@ -12,6 +12,22 @@
 	z-index: 0;
 }
 
+.myhero {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hero-left, .hero-right {
+	border: solid black 1px;
+}
+
+.hero-left {
+	font-size: 4rem;
+	text-align: right;
+	text-transform: uppercase;
+}
+
 .banner {
 	background-color: var(--yellow);
 	font-family: 'Fredericka the Great', 'cursive';
@@ -112,11 +128,7 @@
 			/0px 1fr;
 	}
 	
-	.contact {
-		display: none;
-	}
-	
-	.slogan {
+	.not-mobile {
 		display: none;
 	}
 }
