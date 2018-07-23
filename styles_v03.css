@@ -160,7 +160,7 @@
 	}
 
 	.banner {
-		background-color: var(--lightgreen);
+		background-color: var(--green);
 		font-size: 1.8rem;
 		padding: 0;
 		text-align: center;
@@ -171,6 +171,7 @@
 	}
 	
 	.name {
+		font-family: 'Roboto Slab', serif;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 	}
