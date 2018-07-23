@@ -82,19 +82,21 @@
 }
 
 .cv-grid {
-	color: var(--mygray);
 	display: grid;
 	grid-template-columns: 2fr 5fr;
 	background-color: white;
 	border-radius: 2px;
+	color: var(--mygray);
+	font-family: 'Roboto', sans-serif;
 	margin: 1rem;
 	margin-bottom: 0;
 	padding: 1rem;
 	padding-right: 0;
 }
 
-.titletext {
+.cv-grid .titletext {
 	grid-column: 1 / span 2;
+	font-family: 'Roboto Slab', serif;
 	font-size: 1.5rem;
 	font-weight: bold;
 	padding: 0;
@@ -110,8 +112,9 @@
 	text-transform: uppercase;
 }
 
-.job {
+.cv-grid .job {
 	grid-column: 2 / 2;
+	font-family: 'Roboto Condensed', sans-serif;
 	border-bottom: solid var(--darkblue) 2px;
 	padding-bottom: 0.5rem;
 }
@@ -159,6 +162,7 @@
 
 html, body {
 	background-color: var(--blue);
+	font-family: 'Roboto', sans-serif;
 	line-height: 1;
 	margin: 0;
 	padding: 0;
