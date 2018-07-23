@@ -70,8 +70,7 @@
 .navbar {
 	display: grid;
 	margin: 1rem;
-	position : sticky;
-	top: 0;
+	position : fixed;
 }
 
 .item {
