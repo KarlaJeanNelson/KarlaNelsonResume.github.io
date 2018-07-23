@@ -71,6 +71,7 @@
 	display: grid;
 	margin: 1rem;
 	position : fixed;
+	top: 4.7rem;
 }
 
 .item {
