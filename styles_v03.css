@@ -10,6 +10,12 @@
 	--brown: #795548;
 	--mygray: #839192;
 	--maroon: #900C3F;
+	--background: #D0ECE7;
+	--button1: #C70039;
+	--button2: #FF5733;
+	--button3: #F4D03F;
+	--button4: #795548;
+	--accent: #2980B9;
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
@@ -72,6 +78,10 @@
 	margin: 1rem;
 	position : fixed;
 	top: 4.7rem;
+}
+
+.navbar div {
+	
 }
 
 .item {
@@ -176,7 +186,7 @@
 		padding-bottom: 0.5rem;
 	}
 
-	.topnav {
+	.nav {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-auto-flow: column;

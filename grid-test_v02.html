@@ -3,42 +3,42 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>kjn.resume</title>
+		<title>KarlaJeanNelson</title>
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Comfortaa|Fredericka+the+Great|Karla|Special+Elite|Roboto|Roboto+Condensed|Roboto+Slab">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4thediviuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-		<link rel="stylesheet" href="styles_v02.css" type="text/css">
+		<link rel="stylesheet" href="grid-test_v02.css" type="text/css">
 		<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 	</head>
 	
 	<body>
-		<div class="banner shadow">
-			<div class="name">Karla Jean Nelson</div>
-			<div class="slogan not-mobile">insatiably curious &#47;&#47; delightfully unconventional &#47;&#47; relentlessly persistent</div>
+		<div class="grid">
+			<div class="banner">
+				<div class="name">Karla Jean Nelson</div>
+				<div class="slogan not-mobile">insatiably curious &#47;&#47; delightfully unconventional &#47;&#47; relentlessly persistent</div>
+			</div>
+			<div class="left-grid">left</div>
+		    <div class="navbar">
+		        <div class="button1"><a href="#contact-link">Contact</a></div>
+		        <div class="button2"><a href="#experience">Experience</a></div>
+		        <div class="button3"><a href="#education">Education</a></div>
+		        <div class="button4"><a href="#other">Other</a></div>
+		    </div>
+		    <div class="content">content</div>
+		    <div class="right-grid">right</div>
 		</div>
-		<!--<div class="banner shadow mobile-only">
-			<div class="name">Karla Jean Nelson</div>
-			<div class="topnav mobile-only">
-				<div class="item" style="background-color:var(--button1);"><a href="#contact-link">Contact</i></a></div>
-		  		<div class="item" style="background-color:var(--button2);"><a href="#experience">Experience</a></div>
-		  		<div class="item" style="background-color:var(--button3);"><a href="#education">Education</a></div>
-		  		<div class="item" style="background-color:var(--button4);"><a href="#other">Other</a></div>
-			</div>
-		</div>-->
-		<div class="grid-area">
-			<div class="top-offset" id="contact-link">contact link offset</div>
-			<div class="left-gutter"></div>
-			<div class="right-gutter"></div>
-			<div class="navbar">
-				<div class="nav slogan">
-					<div class="navitem first"><a href="#contact-link">Contact</a></div>
-  				<div class="navitem second"><a href="#experience">Experience</a></div>
-  				<div class="navitem third"><a href="#education">Education</a></div>
-  				<div class="navitem fourth"><a href="#other">Other</a></div>
-				</div>
-			</div>
-			<div class="contact-info">
-				<div class="cv-grid card shadow">
+		<div class="content-grid">
+			<div class="top offset" id="contact-link">contact-info offset</div>
+			<div class="left-gutter">left 2</div>
+			<div class="nav">nav 2
+		        <div class="button1"><a href="#contact-link">Contact</a></div>
+		        <div class="button2"><a href="#experience">Experience</a></div>
+		        <div class="button3"><a href="#education">Education</a></div>
+		        <div class="button4"><a href="#other">Other</a></div>
+		    </div>
+			<div class="right-gutter">right 2</div>
+	        <div class="contact-info">
+	        	<div class="cv-grid card shadow">
 					<div class="titletext"><i class="fas fa-address-card fa-fw"></i> Contact Information</div>
 					<div class="company">
 						<div class="special"><i class="fas fa-mobile-alt fa-fw"></i> Mobile</div>
@@ -68,10 +68,10 @@
 						<a href="www.github.com/KarlaJeanNelson">www.github.com/KarlaJeanNelson</a>
 					</div>
 				</div>
-			</div>
-			<div class="contact-info offset" id="experience">experience link offset</div>
-			<div class="experience">
-				<div class="cv-grid card shadow">
+	        </div>
+	        <div class="contact-info offset" id="experience">experience offset</div>
+	        <div class="experience">
+	        	<div class="cv-grid card shadow">
 					<div class="titletext"><i class="fas fa-chart-line fa-fw"></i> Experience</div>
 					<div class="company">
 						<div class="special">Cargill</div>
@@ -149,9 +149,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="experience offset" id="education">education link offset</div>
-			<div class="education">
-				<div class="cv-grid card shadow">
+			<div class="experience offset" id="education">education offset</div>
+	        <div class="education">
+	    		<div class="cv-grid card shadow">
 					<div class="titletext"><i class="fas fa-graduation-cap fa-fw"></i> Education</div>
 					<div class="company">
 						<div class="special">MBA</div>
@@ -171,10 +171,10 @@
 						<div class="job-desc">MAJOR: Biochemistry<br>MINOR: Art</div>
 					</div>
 				</div>
-			</div>
-			<div class="education offset" id="other">other link offset</div>
-			<div class="other">
-				<div class="cv-grid card shadow">
+	       	</div>
+	        <div class="education offset" id="other">other offset</div>
+	        <div class="other">
+	        	<div class="cv-grid card shadow" style="margin-bottom:1rem;">
 					<div class="titletext"><i class="fas fa-gem fa-fw"></i> Other Stuff</div>
 					<div class="company">
 						<div class="special">Patents</div>
@@ -204,7 +204,8 @@
 						<i class="fab fa-react fa-fw"></i>
 					</div>
 				</div>
-			</div>
 		</div>
-	</body>
+<!--			<div class="right-gutter"></div>
+-->		</div>
+    </body>
 </html>
